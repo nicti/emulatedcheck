@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "commander": "^6.2.1",
+    "puppeteer": "^5.5.0"
+  },
+  "version": "1.0.0",
+  "bin": "./cli.js",
+  "name": "emulatedcheck",
+  "license": "MIT"
+}

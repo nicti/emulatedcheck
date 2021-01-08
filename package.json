@@ -4,7 +4,7 @@
     "puppeteer": "^5.5.0"
   },
   "scripts": {
-    "start": "node cli.js check --selector \".super-attribute-select > option\" --url \"https://www.so-tech.eu/moebelgriff-griffleiste-blankett-slim-titanoptik-gebuerstet-145-1195-mm.html\""
+    "start": "node cli.js check --selector \".super-attribute-select > option\" --url \"https://www.so-tech.eu/moebelgriff-griffleiste-blankett-slim-titanoptik-gebuerstet-145-1195-mm.html\" --user-agent \"Test\" -v"
   },
   "version": "1.0.2",
   "bin": "./cli.js",

@@ -10,4 +10,17 @@ program
     .helpOption('-h, --help', 'Show this command summary.')
     .addHelpCommand(false);
 
+program
+    .command('check')
+    .description('Perform emulated check to find passed js selector in passed website')
+    .requiredOption('--url <url>','URL to check for js selector')
+    .requiredOption('--selector <selector>','js selector to search for')
+    .option('--count <count>','Amount of selector length equal or larger to compare','1')
+    .option('-u, --auth-username <user>', 'Basic authentication username.')
+    .option('-p, --auth-password <password>', 'Basic authentication password.')
+    .action(async (config) => {
+        result = await require('./lib/check')(config);
+        return result;
+    })
+
 program.parse(process.argv);

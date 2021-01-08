@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node cli.js check --selector \".super-attribute-select > option\" --url \"https://www.so-tech.eu/moebelgriff-griffleiste-blankett-slim-titanoptik-gebuerstet-145-1195-mm.html\" --user-agent \"Test\" -v"
   },
-  "version": "1.0.3",
+  "version": "1.1.0",
   "bin": "./cli.js",
   "name": "emulatedcheck",
   "license": "MIT",

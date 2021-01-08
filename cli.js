@@ -19,8 +19,8 @@ program
     .option('-u, --auth-username <user>', 'Basic authentication username.')
     .option('-p, --auth-password <password>', 'Basic authentication password.')
     .action(async (config) => {
-        result = await require('./lib/check')(config);
-        return result;
+        let result = await require('./lib/check')(config)
+        process.exit(result)
     })
 
 program.parse(process.argv);
